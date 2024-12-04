@@ -1,0 +1,1 @@
+"O bloco de código é definido por {}. Dentro desse par terá sentenças de códigos"
