@@ -1,0 +1,32 @@
+A boa prática indica que o uso do array deve se dar com dados homogeneo, ou seja, do mesmo tipo.
+
+Um array é uma estrutura de dados em JavaScript que armazena uma coleção de valores em uma única variável. 
+Os valores podem ser de qualquer tipo: números, strings, objetos, outros arrays (arrays aninhados) ou até funções.
+
+-> Arrays podem crescer ou encolher dinamicamente à medida que valores são adicionados ou removidos.
+-> Um array pode conter elementos de diferentes tipos.
+
+O método forEach é usado para iterar sobre os elementos de um array em JavaScript. 
+Ele executa uma função de callback fornecida uma vez para cada elemento do array, em ordem.
+
+map: Executa uma função para cada elemento de um array e retorna um novo array com os resultados da função. 
+É usado quando você deseja transformar os elementos de um array em outro array.
+
+Reduce: O método reduce é usado para reduzir todos os elementos de um array em um único valor. Ele aplica uma função de callback acumuladora a cada elemento do array, do início ao fim, acumulando o resultado final.
+
+array.reduce(callback(acumulador, valorAtual, indice, array), valorInicial);
+
+Parâmetros:
+callback: A função executada em cada elemento do array. Ela recebe:
+
+acumulador: O valor retornado pela iteração anterior (ou o valorInicial na primeira iteração).
+valorAtual: O elemento atual do array sendo processado.
+indice (opcional): O índice do elemento atual.
+array (opcional): O array sendo iterado.
+valorInicial (opcional):
+
+O valor inicial do acumulador. Se omitido, o primeiro elemento do array é usado como valorInicial, e a iteração começa no segundo elemento.
+
+
+
+

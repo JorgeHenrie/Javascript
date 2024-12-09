@@ -1,0 +1,39 @@
+/*
+A cadeia de protótipos em JavaScript (chamada de prototype chain) é o mecanismo pelo qual objetos podem acessar propriedades e métodos que não estão definidos diretamente neles, mas em seus protótipos ou protótipos ancestrais.
+
+Como Funciona a Cadeia de Protótipos
+Quando você tenta acessar uma propriedade ou método de um objeto:
+O JavaScript primeiro verifica se essa propriedade ou método existe diretamente no objeto.
+Se não for encontrado, ele verifica no protótipo do objeto.
+O processo continua subindo na cadeia de protótipos até alcançar o topo da hierarquia, que é o Object.prototype.
+Se o método ou propriedade não for encontrado em nenhum lugar na cadeia, o JavaScript retorna undefined.
+Exemplo Prático
+javascript
+Copiar código
+const animal = {
+    som: "genérico",
+    fazerSom() {
+        console.log(`O animal faz um som: ${this.som}`);
+    }
+};
+
+const cachorro = Object.create(animal); // Define 'animal' como protótipo de 'cachorro'
+cachorro.som = "au au";
+
+const gato = Object.create(animal); // Define 'animal' como protótipo de 'gato'
+gato.som = "miau";
+
+cachorro.fazerSom(); // "O animal faz um som: au au"
+gato.fazerSom(); // "O animal faz um som: miau"
+O que está acontecendo?
+O objeto cachorro não possui o método fazerSom diretamente.
+O JavaScript verifica o protótipo de cachorro, que é animal, e encontra o método lá.
+O mesmo ocorre com gato, que também herda de animal.
+
+
+Cadeia de Protótipos no Exemplo
+cachorro → protótipo é animal.
+animal → protótipo é Object.prototype.
+Object.prototype → protótipo é null (fim da cadeia).
+
+*/

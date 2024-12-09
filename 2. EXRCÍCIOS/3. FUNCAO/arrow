@@ -1,0 +1,27 @@
+O Que É Uma Arrow Function?
+Introduzida no ES6, uma arrow function é uma maneira mais concisa de declarar funções.
+
+A sintaxe geral é: 
+(parâmetros) => expressão
+Se a função tiver apenas uma expressão, ela será retornada automaticamente (não precisa da palavra-chave return).
+
+Se houver apenas um parâmetro, você pode omitir os parênteses ao redor dele. a => a.nota
+
+a.nota:
+Acessa a propriedade nota do objeto a.
+
+Forma Expandida
+A arrow function a => a.nota é uma forma abreviada de escrever a seguinte função:
+
+javascript
+Copiar código
+function obterNota(a) {
+    return a.nota;
+}
+Ou, se fosse uma função anônima:
+
+javascript
+Copiar código
+const resultado = alunos.map(function(a) {
+    return a.nota;
+});
