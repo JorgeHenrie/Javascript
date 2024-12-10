@@ -1,0 +1,39 @@
+Na programação imperativa, você descreve como algo deve ser feito, passo a passo. Esse estilo foca em controlar o fluxo de execução explicitamente, especificando exatamente as operações e a ordem em que devem ser executadas. Digo como fazer tal coisa
+
+Características:
+
+Controla diretamente o estado do programa.
+Uso explícito de loops, condicionais e mutação de variáveis.
+Foco no "como".
+Exemplo: Filtrar números pares de um array (modo imperativo)
+javascript
+Copiar código
+const numeros = [1, 2, 3, 4, 5, 6];
+const numerosPares = [];
+
+for (let i = 0; i < numeros.length; i++) {
+  if (numeros[i] % 2 === 0) {
+    numerosPares.push(numeros[i]);
+  }
+}
+
+console.log(numerosPares); // [2, 4, 6]
+
+########
+Na programação declarativa, você descreve o que deseja alcançar, e não como alcançar isso. A implementação dos detalhes é delegada a funções ou abstrações subjacentes. Digo o que tem que ser feito
+
+Características:
+
+Evita controlar diretamente o estado.
+Uso de funções de ordem superior (e.g., map, filter, reduce).
+Foco no "o que".
+Exemplo: Filtrar números pares de um array (modo declarativo)
+
+const numeros = [1, 2, 3, 4, 5, 6];
+const numerosPares = numeros.filter(num => num % 2 === 0);
+
+console.log(numerosPares); // [2, 4, 6]
+Nesse exemplo:
+
+O código foca no que deve ser feito: filtrar números pares.
+A lógica de como isso acontece é abstraída pelo método filter.
