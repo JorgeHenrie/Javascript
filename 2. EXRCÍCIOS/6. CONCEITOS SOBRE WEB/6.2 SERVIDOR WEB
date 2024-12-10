@@ -1,0 +1,25 @@
+Servidor Web: Um servidor web é um software (ou hardware dedicado) que processa solicitações de clientes via protocolo HTTP ou HTTPS e entrega
+os recursos solicitados, como páginas HTML, arquivos de mídia, documentos, APIs, entre outros, através da internet ou de uma rede interna.
+
+Enquanto o HTTP é um protoco de comunicação entre cliente e o servidor, o último vai processar a solicitação feita pelo cliente (utilizando o Http)
+e retornar algum recurso.
+
+Funções Principais de um Servidor Web
+Receber Requisições: Um cliente (como um navegador) envia uma solicitação HTTP ao servidor para acessar um recurso, como uma página ou arquivo.
+
+Processar Requisições: O servidor interpreta a solicitação, identifica o recurso solicitado e decide como tratá-lo. Pode envolver buscar arquivos 
+estáticos ou consultar dados de um banco de dados.
+
+Responder ao Cliente: O servidor envia uma resposta HTTP ao cliente, que pode incluir:
+Recursos estáticos (HTML, CSS, imagens, etc.).
+Dados dinâmicos gerados por scripts (PHP, Python, etc.).
+Mensagens de erro (como 404 Not Found).
+
+Exemplo de Funcionamento
+1.Um usuário acessa https://meusite.com/home.
+2.O navegador envia uma requisição ao servidor web com o método HTTP GET e o recurso /home.
+3.O servidor:
+3.1 Analisa a requisição.
+3.2 Busca o arquivo estático home.html ou gera o conteúdo com base em scripts (e.g., PHP).
+4. O servidor retorna a página com o código de status HTTP 200 OK.
+5. O navegador renderiza a página para o usuário.

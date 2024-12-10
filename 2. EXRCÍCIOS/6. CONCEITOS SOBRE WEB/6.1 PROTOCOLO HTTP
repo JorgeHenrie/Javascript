@@ -1,0 +1,34 @@
+O protocolo HTTP (HyperText Transfer Protocol) é um protocolo de comunicação usado para a transferência de informações 
+entre clientes (como navegadores) e servidores na web. É a base da comunicação na internet, permitindo o acesso a páginas
+web, APIs, arquivos e outros recursos.
+
+Principais Características do HTTP
+Baseado em texto: Todas as mensagens HTTP são legíveis e baseadas em texto, incluindo cabeçalhos e corpo das mensagens.
+
+Protocolo sem estado (stateless): Cada requisição é independente e não "lembra" o estado das requisições anteriores. Sessões persistentes são 
+gerenciadas com tecnologias adicionais, como cookies ou tokens.
+
+Protocolo cliente-servidor: O cliente (como um navegador) envia uma requisição ao servidor, que processa e retorna uma resposta.
+
+Extensível: Permite adicionar cabeçalhos personalizados, trabalhar com diferentes métodos e suportar novos padrões (como o HTTPS, que é HTTP sobre 
+TLS).
+
+Métodos HTTP: Os métodos HTTP definem o tipo de operação a ser realizada no recurso.
+
+GET: Solicita a recuperação de um recurso.
+GET /home HTTP/1.1
+
+POST: Envia dados para o servidor (ex.: cadastro, login).
+POST /api/login HTTP/1.1
+
+PUT: Substitui ou cria um recurso.
+PUT /api/user/123 HTTP/1.1
+
+DELETE: Remove um recurso.
+DELETE /api/user/123 HTTP/1.1
+
+PATCH: Atualiza parcialmente um recurso.
+
+HEAD: Solicita apenas os cabeçalhos, sem o corpo.
+
+OPTIONS: Obtém informações sobre os métodos suportados por um recurso.
